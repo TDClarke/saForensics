@@ -1,6 +1,6 @@
 # saForensics
 Post extraction scripts used after carving files from a drive or drive image or dumping files using volitility framework:
-This can be done with volatility 3, by suing the command:
+This can be done with volatility 3, by using the command:
 ```vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles```
 
 ```saNSFW.py Standalone script:
