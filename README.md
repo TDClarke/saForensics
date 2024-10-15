@@ -1,7 +1,7 @@
 # saForensics
 Post extraction scripts used after carving files from a drive or drive image or dumping files using volitility framework:
 This can be done with volatility 3, by suing the command:
-vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles
+```vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles```
 
 saNSFW.py Standalone script:
 Uses the https://github.com/yahoo/open_nsfw CAFFE classifier to sort NSFW images.
