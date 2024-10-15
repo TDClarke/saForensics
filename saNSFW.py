@@ -22,7 +22,7 @@ net = cv2.dnn.readNetFromCaffe(model_path, weights_path)
 
 try:
     for filename in os.listdir(input_directory):
-        if filename.endswith(".jpg.dat") or filename.endswith(".png.dat"):
+        if filename.endswith(".jpg.dat") or filename.endswith(".png.dat") or filename.endswith(".jpg") or filename.endswith(".png"):
             filepath = os.path.join(input_directory, filename)
 
             try:

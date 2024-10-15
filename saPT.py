@@ -57,7 +57,7 @@ genderNet=cv2.dnn.readNet(genderModel,genderProto)
 
 try:
     for filename in os.listdir(input_directory):
-        if filename.endswith(".jpg") or filename.endswith(".png"):
+        if filename.endswith(".jpg.dat") or filename.endswith(".png.dat") or filename.endswith(".jpg") or filename.endswith(".png"):
             filepath = os.path.join(input_directory, filename)
 
             try:
