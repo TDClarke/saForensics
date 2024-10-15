@@ -3,9 +3,9 @@ Post extraction scripts used after carving files from a drive or drive image or 
 This can be done with volatility 3, by suing the command:
 ```vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles```
 
-saNSFW.py Standalone script:
+```saNSFW.py Standalone script:
 Uses the https://github.com/yahoo/open_nsfw CAFFE classifier to sort NSFW images.
-```C:\volatility3>python saNSFW.py -h
+C:\volatility3>python saNSFW.py -h
 usage: saNSFW.py [-h] input_directory output_directory
 
 positional arguments:
@@ -76,4 +76,4 @@ positional arguments:
 options:
   -h, --help        show this help message and exit
 
-Example C:\volatility3>python saRigan.py TEST OUTPUT```
+Example C:\volatility3>python saRigan.py TEST OUTPUT
