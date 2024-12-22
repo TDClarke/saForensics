@@ -3,6 +3,20 @@ Post extraction scripts used after carving files from a drive or drive image or 
 This can be done with volatility 3, by using the command:
 ```vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles```
 
+```saImagePIL.py Standalone script:
+Uses PIL to detect if file is a image.
+C:\volatility3>python saImagePIL.py -h
+usage: saImagePIL.py [-h] input_directory output_directory
+
+positional arguments:
+  input_directory   The input directory to scan
+  output_directory  The output directory to move positive hits
+
+options:
+  -h, --help        show this help message and exit
+
+Example C:\volatility3>python saImagePIL.py TEST OUTPUT
+
 ```saNSFW.py Standalone script:
 Uses the https://github.com/yahoo/open_nsfw CAFFE classifier to sort NSFW images.
 C:\volatility3>python saNSFW.py -h
