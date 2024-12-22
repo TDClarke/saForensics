@@ -24,14 +24,13 @@ def is_image(filepath):
 def main():
     try:
         for filename in os.listdir(input_directory):
-            if filename.endswith(".jpg.dat") or filename.endswith(".png.dat") or filename.endswith(".jpg") or filename.endswith(".png"):
-                filepath = os.path.join(input_directory, filename)
-                result = is_image(filepath)
-                if result == "True":
-                    #print(f"This is a image file: {result}")
-                    output_filename = os.path.join(output_directory, filename)
-                    print(f"File is iamge: Copied to: {output_filename}")
-                    shutil.copy(filepath, output_filename)
+            filepath = os.path.join(input_directory, filename)
+            result = is_image(filepath)
+            if result == "True":
+                #print(f"This is a image file: {result}")
+                output_filename = os.path.join(output_directory, filename)
+                print(f"File is iamge: Copied to: {output_filename}")
+                shutil.copy(filepath, output_filename)
     except Exception as e:
         print(f"Error processing file '{filepath}': {e}")
 
