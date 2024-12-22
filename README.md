@@ -17,7 +17,9 @@ options:
 
 Example C:\volatility3>python saImagePIL.py TEST OUTPUT
 
-```saNSFW.py Standalone script:
+
+
+saNSFW.py Standalone script:
 Uses the https://github.com/yahoo/open_nsfw CAFFE classifier to sort NSFW images.
 C:\volatility3>python saNSFW.py -h
 usage: saNSFW.py [-h] input_directory output_directory
@@ -49,6 +51,8 @@ C:\volatility3>python saNSRL.py NSRLFile-md5.idx DUMPI DUMPO
 Opening NSRL file
 KFF Unknown :  DUMP\file.0xbf0f66995ef0.0xbf0f6af7c8d0.DataSectionObject.EtwRTEventlog-Security.etl.dat
 
+
+
 #### SQL ###
 saNSRLSQL.py Standalone script:
 Uses a database connection, editable within the script to sort NSRL known images.
@@ -63,6 +67,8 @@ positional arguments:
 options:
   -h, --help        show this help message and exit```
 
+
+
 saPT.py Standalone script:
 Uses https://talhassner.github.io/home/publication/2015_CVPR to sort images of pre teen childen.
 C:\volatility3>python saPT.py -h
@@ -76,6 +82,8 @@ options:
   -h, --help        show this help message and exit
 
 Example C:\volatility3>python saPT.py TEST OUTPUT
+
+
 
 
 saRigan.py Standalone script:
